@@ -1,7 +1,8 @@
 import nodemodule as node
 import numpy as np
 
-def astar_search(maze, cost, start, end):
+def astar_search(maze, start, end):
+    cost = 10
     start_node = node.Node(None, tuple(start))
     start_node.g = start_node.h = start_node.f = 0
     finish_node = node.Node(None, tuple(end))

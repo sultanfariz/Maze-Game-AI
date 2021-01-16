@@ -1,7 +1,7 @@
 import nodemodule as node
 import numpy as np
 
-def greedy_search(maze, cost, start, end):
+def greedy_search(maze, start, end):
     start_node = node.Node(None, tuple(start))
     start_node.f = 0
     finish_node = node.Node(None, tuple(end))
